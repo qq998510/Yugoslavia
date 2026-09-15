@@ -1,39 +1,38 @@
--- Ouroboros 脚本加载器（汉化版）
--- 使用方式：loadstring(game:HttpGet("http://luminon.top/loader.lua"))()
+南斯拉夫.lua--欧罗伯罗斯剧本加载器（汉化版--使用方式：载荷串(游戏：HttpGet("https://github.com/qq998510/Yugoslavia/blob/08d35592e98e120aa3e9ee547ed0c4ab1f6a888b/Yugoslavia.lua"))()
 
 -- 等待游戏加载完成
-if not game:IsLoaded() then
-	game.Loaded:Wait()
-end
+如果不游戏：IsLoaded()然后
+game.Loaded：等待()
+结束
 
 -- 脚本资源基础地址
-local BASE = 'https://raw.githubusercontent.com/joustingmatch/Ouroboros/main/games/'
+当地的基数='https://raw.githubusercontent.com/joustingmatch/Ouroboros/main/games/'
 
 -- 游戏 ID 对应脚本文件映射表
-local games = {
-	[9190691] = 'anime-squadron.lua',
-	[896806231] = 'axe-rng.lua',
-	[374427578] = 'hitagolfball.luau',
-	[759293173] = 'reign-piece.lua',
-	[973045631] = 'anime-card-farm.lua',
-	[104489519] = 'defend-ur-base-with-anime.lua',
-	[32744161] = 'projectaurarng.luau',
-	[899260384] = 'mergescp.luau',
-	[446405201] = 'merge-a-nuke.lua',
-	[290340269] = 'dinogame.luau',
-	[1040745973] = 'laststop.luau',
-	[7020486356] = 'endlesstower.luau',
-	[773411069] = 'csim.luau',
-	[874625030] = 'choptrees.luau',
-	[44742013] = 'slashperclick.luau',
-	[42321785] = 'slopturret.luau',
-	[296197995] = 'stealcumseed.luau',
-	[35247239] = 'fruitsex.luau',
-	[980319952] = 'fuckacube.luau',
-	[5028964] = 'saber-simulator.lua',
-	[143238687] = 'horseanime.luau',
-	[900737444] = 'samuraislut.luau',
-	[3796913] = 'analgunzombies.lua',
+当地的游戏={
+[9190691] ='动漫中队.卢阿,
+[896806231] ='axe-rng.lua',
+[374427578] ='hitagolfball.lu',
+[759293173] ='rign-piece.lua',
+[973045631] ='动漫卡农场.卢阿,
+[104489519] ='用动漫保护我们的基地.lua',
+[32744161] ='projectaurarng.luau',
+[899260384] ='mergescp.luau',
+[446405201] ='merge-a-nuke.lua',
+[290340269] ='dinogame.luau',
+[1040745973] ='laststop.luau',
+[7020486356] ='Endlesstower.luau',
+[773411069] ='csim.luau',
+[874625030] ='Choptrees.luau',
+[44742013] ='slashperclick.luau',
+[42321785] ='slopturret.luau',
+[296197995] ='stealcumseed.luau',
+[35247239] ='fruitex.luau',
+[980319952] ='fuckacube.luau',
+[5028964] ='saber-simulator.lua',
+[143238687] ='horseanime.luau',
+[900737444] ='samuraislut.luau',
+[3796913] ='analgunzombies.lua',
 	[15203288] = 'nuttinginsidebrainrots.luau',
 	[984941738] = 'fisheggs.luau',
 	[5086436] = 'huntingseason.luau',
